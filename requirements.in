@@ -1,0 +1,8 @@
+# Core dependencies
+gradio>=5.13.2
+boto3>=1.36.13
+dataclasses-json>=0.6.4
+
+# Development dependencies
+black>=24.10.0  # For code formatting
+ruff>=0.4.10    # For linting
