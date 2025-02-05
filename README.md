@@ -1,3 +1,3 @@
 # Xifin Reasoner Chat Demo
 
-To run this demo, simply run `gradio r1_demo.py`
+To run this demo, simply run `cd app` and `gradio r1_demo.py`
