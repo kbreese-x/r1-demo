@@ -66,7 +66,7 @@ def is_thinking_message(message: dict) -> bool:
     return False
 
 
-def invoke_endpoint(history: list[dict[str, str]]):
+def invoke_endpoint(history: list[dict[str, str]], **params):
     endpoint_name = "xifin-reasoner-7b-endpoint"
 
     payload = {
@@ -75,6 +75,7 @@ def invoke_endpoint(history: list[dict[str, str]]):
             for msg in history
             if not is_thinking_message(msg)
         ],
+        **params,
         "stream": True,
     }
     try:
